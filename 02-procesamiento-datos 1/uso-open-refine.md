@@ -38,6 +38,8 @@ De esta manera evitaremos que a la hora de hacer una table, el mismo usuario per
 Para hacerlo en la columna del texto de los tweets realizar la siguiente acción:
  `edit cells > common transforms > to littlecase`
  
+ Si se quiere, se puede también cambiar a UPPERCASE. El objetivo es que todo el texto sea igual. 
+ 
  ###Extracción de hashtags
  
  *Exactamente lo mismo que con los usuarios*
