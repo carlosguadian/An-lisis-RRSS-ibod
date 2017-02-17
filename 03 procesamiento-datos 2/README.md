@@ -15,14 +15,14 @@ Las hojas de cálculo de Google son una herramienta muy potente. Las vamos a uti
 		
 ###Generación de archivos relacionales
 
-	- Utilizaremos Google Sheets para generar archivos relacionales para poder utilizarlos en **Gephi**:
-		- *Archivo de grafo de menciones* para poder determinar a los usuarios clave y determinar sub-comunidades.
-		- *Archivo de grafo de url* para ver qué usuarios las han compartido
-		- *Archivo de grafo de hashtags* para determinar como se han utilizado, y cuales han tenido más relevancia.
-	- Es **importante** que la hoja de cálculo tenga la localización de Estados Unidos. Hay diferencia en el carácter que define el decimal en los números. En EEUU es un `.`, mientras que en el sistema no anglosajón el decimal es una `,`.
-	- Importar el archivo resultante del proceso con **Open Refine** en un archivo nuevo de **Google Sheets**
-	- Para cada tipo de archivo, abriremos una pestaña nueva
-	- En la pestaña para el archivo de grafo de menciones pegaremos todas las columnas que contengan nombres de usuario, poniendo siempre la primera la que contiene el nombre de usuario del que ha publicado el tweet.
-	- Para el resto de archivos de grafo copiaremos en el mismo orden las columnas correspondientes. Es decir, para el de url pegaremos las columnas de las url y para el de los hashtag, las columnas que contengan hashtags. Tanto en una como en la otra, siempre pondremos al emisor del tweet.
-	- Para el caso de las url y de los hashtags lo que obtenemos es un grafo bipartito. Es decir con dos tipos de nodos.
-	- Una vez tenemos montados los archivos montados, sólo hay que exportarlos como **csv** y abrirlo en **Gephi**.
+- Utilizaremos Google Sheets para generar archivos relacionales para poder utilizarlos en **Gephi**:
+	- *Archivo de grafo de menciones* para poder determinar a los usuarios clave y determinar sub-comunidades.
+	- *Archivo de grafo de url* para ver qué usuarios las han compartido
+	- *Archivo de grafo de hashtags* para determinar como se han utilizado, y cuales han tenido más relevancia.
+- Es **importante** que la hoja de cálculo tenga la localización de Estados Unidos. Hay diferencia en el carácter que define el decimal en los números. En EEUU es un `.`, mientras que en el sistema no anglosajón el decimal es una `,`.
+- Importar el archivo resultante del proceso con **Open Refine** en un archivo nuevo de **Google Sheets**
+- Para cada tipo de archivo, abriremos una pestaña nueva
+- En la pestaña para el archivo de grafo de menciones pegaremos todas las columnas que contengan nombres de usuario, poniendo siempre la primera la que contiene el nombre de usuario del que ha publicado el tweet.
+- Para el resto de archivos de grafo copiaremos en el mismo orden las columnas correspondientes. Es decir, para el de url pegaremos las columnas de las url y para el de los hashtag, las columnas que contengan hashtags. Tanto en una como en la otra, siempre pondremos al emisor del tweet.
+- Para el caso de las url y de los hashtags lo que obtenemos es un grafo bipartito. Es decir con dos tipos de nodos.
+- Una vez tenemos montados los archivos montados, sólo hay que exportarlos como **csv** y abrirlo en **Gephi**.
