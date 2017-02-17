@@ -40,11 +40,11 @@ Para hacerlo en la columna del texto de los tweets realizar la siguiente acción
  
  Si se quiere, se puede también cambiar a UPPERCASE. El objetivo es que todo el texto sea igual. 
  
- ###Extracción de hashtags
+###Extracción de hashtags
  
  *Exactamente lo mismo que con los usuarios*
  
- ###Archivo resultante
+###Archivo resultante
  
  Al acabar la operación deseada, en nuestro caso las tres. Exportaremos el resultado a un fichero csv con el que poder trabajar en Google Sheets.
  
