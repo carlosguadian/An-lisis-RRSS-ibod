@@ -1,6 +1,7 @@
 #Procesamiento de datos
 ## Uso de Open Refine
-*Antes conocido como **Google Refine***
+
+Antes conocido como **Google Refine**
 
 Una vez hemos obtenido los datos, lo primero que tenemos que hacer es prepararlos para el análisis.
 
