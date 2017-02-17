@@ -23,8 +23,8 @@ Utilizaremos el fichero **tweets-opendata.csv**
 - Introducir el nombre de la nueva columna
 - Seleccionar como lenguaje GREL
 - En expression introducir lo siguiente:
-"filter(split(value, " "),v,startsWith(v,"http")).join("||")"
+`filter(split(value, " "),v,startsWith(v,"http")).join("||")`
 
 *Para hacer la extracción de “usuarios” se usa la misma expresión pero sustituyendo “http” por “@”. Útil en el caso de tener que montar las relaciones de manera manual.*
 
-Si se generan celdas con múltiples valores hay que utilizar *Split multi-valued cells in column links* definiendo como separador "||", que es el que hemos utilizado anteriormente.
+Si se generan celdas con múltiples valores hay que utilizar *Split multi-valued cells in column links* definiendo como separador `||`, que es el que hemos utilizado anteriormente.
