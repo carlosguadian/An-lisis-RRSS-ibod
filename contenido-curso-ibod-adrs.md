@@ -1,10 +1,11 @@
---Contenido del módulo Análisis de Datos de Redes Sociales--
+#Análisis de Datos de Redes Sociales
+##Contenido del módulo 
 
 Duración: 4h
 
 Descripción Corta: "Recopilación, monotorizacion y analisis de los datos utilizables de las RRSS"
 
-Contenidos:
+###Contenidos:
 
 - Obtención de datos a través de API (Twitter, Facebook)
 	-R; datos de comunidad de TW (seguidores y seguidos) 
