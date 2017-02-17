@@ -11,7 +11,7 @@ Las hojas de cálculo de Google son una herramienta muy potente. Las vamos a uti
 - Actividad diaria
 	- Calcularemos la media de tweets por día para determinar:
 		- Si es un bot: Un usuario con una media de tweets diaria muy elevada (por encima de `25` tweets diarios de media hay que empezar a desconfiar) es muy probable que sea una cuenta automatizada.
-		- Si es un usuario que sólo utiliza twitter para informarse, para leer. No para participar. Estos usuarios tendrán una media muy baja. Podemos empezar a considerarlos como tales cuando la media es inferior a `1` 
+		- Si es un usuario que sólo utiliza twitter para informarse, para leer. No para participar. Estos usuarios tendrán una media muy baja. Podemos empezar a considerarlos como tales cuando la media es inferior a `1`
 		
 ###Generación de archivos relacionales
 
