@@ -9,6 +9,7 @@ Este repositorio contiene materiales para las clases de Análisis de Datos de Re
 
 ###Contenidos:
 
+~~~ 
 - Obtención de datos a través de API (Twitter, Facebook)
     - R; datos de comunidad de TW (seguidores y seguidos) 
 	- Netvizz; datos de página de FB
@@ -22,3 +23,4 @@ Este repositorio contiene materiales para las clases de Análisis de Datos de Re
 		- Actividad diaria
 - Análisis de redes sociales:
 	- Gephi: Análisis de una conversación de TW
+~~~ 
