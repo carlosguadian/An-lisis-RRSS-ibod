@@ -1,9 +1,9 @@
 #Análisis de Datos de Redes Sociales
 ##Contenido del módulo 
 
-Duración: 4h
+*Recopilación, monotorizacion y analisis de los datos utilizables de las RRSS*
 
-Descripción Corta: "Recopilación, monotorizacion y analisis de los datos utilizables de las RRSS"
+Duración: 4h
 
 ###Contenidos:
 
