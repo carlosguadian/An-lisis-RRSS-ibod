@@ -29,14 +29,14 @@ Utilizaremos el fichero **tweets-opendata.csv**
 
 ###Extracción de URL
 
-1.Abrir Open Refine
-2.Crear un nuevo proyecto importando el csv con los tweets
-3.Crear una nueva columna basada en “tweets” llamada “links”
-4.Edit column
-5.Add column based on this column
-6.Introducir el nombre de la nueva columna
-7.Seleccionar como lenguaje GREL
-8.En expression introducir lo siguiente:
+1. Abrir Open Refine
+2. Crear un nuevo proyecto importando el csv con los tweets
+3. Crear una nueva columna basada en “tweets” llamada “links”
+4. Edit column
+5. Add column based on this column
+6. Introducir el nombre de la nueva columna
+7. Seleccionar como lenguaje GREL
+8. En expression introducir lo siguiente:
 `filter(split(value, " "),v,startsWith(v,"http")).join("||")`
 
 > Si se generan celdas con múltiples valores hay que utilizar `edit column > split into several columns` definiendo como separador `||`, que es el que hemos utilizado anteriormente. Esta acción nos generará tantas columnas como el máximo de valores que hayan en una celda. Es decir, si el máximo de hashtags utilizados en un tweet han sido tres, al realizar esta acción tendremos como resultado tres columnas con hashtags.
