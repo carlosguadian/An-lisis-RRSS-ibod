@@ -26,4 +26,4 @@
 - En la pestaña para el archivo de grafo de menciones pegaremos todas las columnas que contengan nombres de usuario, poniendo siempre la primera la que contiene el nombre de usuario del que ha publicado el tweet.
 - Para el resto de archivos de grafo copiaremos en el mismo orden las columnas correspondientes. Es decir, para el de url pegaremos las columnas de las url y para el de los hashtag, las columnas que contengan hashtags. 
 - Para el caso de las url pondremos al emisor del tweet primero. De esta manera lo que obtenemos es un *grafo bipartito*. Es decir, un grafo con dos tipos de nodos. Este tipo de grafo nos permitirá analizar qué url han sido compartidas por qué usuarios.
-- Una vez tenemos montados los archivos, sólo hay que exportarlos como `.csv y abrirlo en **Gephi**.
+- Una vez tenemos montados los archivos, sólo hay que exportarlos como `.csv` y abrirlo en **Gephi**.
