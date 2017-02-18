@@ -3,12 +3,34 @@
 
 ###Métodos de acceso a la API
 
+A la *API* de Twitter se puede acceder de diferentes maneras. La opción más habitual es mediante una aplicación, o mediante un lenguaje de programación como `R`, `Python`, `Java`...
+
+En nuestro caso lo haremos utilizando *R* y *RStudio* junto con el paquete *TwitteR*
+
 ###R
+
+*R* es un **lenguaje y un entorno para la informática estadística y los gráficos**. Es un proyecto GNU que es similar al lenguaje S, el entorno que fue desarrollado en Bell Laboratories (anteriormente AT & T, ahora Lucent Technologies) por John Chambers y colegas.
+
+*R* **proporciona** una amplia variedad de modelos estadísticos (modelos lineales y no lineales, pruebas estadísticas clásicas, análisis de series de tiempo, clasificación, agrupación, ...) y técnicas gráficas, y es muy extensible mediante paquetes.
+
+Una de las **fortalezas** de *R* es la facilidad con la que se pueden producir documentos de calidad de publicación bien diseñados, incluyendo símbolos matemáticos y fórmulas donde sea necesario. Se ha tenido mucho cuidado con los valores predeterminados de las opciones de diseño menores en gráficos, pero el usuario mantiene el control total.
+
+*R* está **disponible como Software Libre** bajo los términos de la *GNU General Public License* de la Fundación de Software Libre en forma de código fuente. Compila y ejecuta en una amplia variedad de plataformas UNIX y sistemas similares (incluyendo FreeBSD y Linux), Windows y MacOS.
+
+###RStudio
+
+*RStudio* es un entorno de desarrollo integrado (IDE) para R (lenguaje de programación) . Incluye una consola, editor de sintaxis que apoya la ejecución de código, así como herramientas para el trazado, la depuración y la gestión del espacio de trabajo.
+
+*RStudio* está disponible para Windows, Mac y Linux o para navegadores conectados a *RStudio Server* o *RStudio Server Pro* (Debian / Ubuntu, RedHat / CentOS, y SUSE Linux).
+
+###Paquete TwitteR
+
+*TwitteR* es un paquete R que proporciona acceso a la API de Twitter. La mayoría de la funcionalidad de la API se admiten, con un sesgo hacia las llamadas API que son más útiles en el análisis de datos en lugar de la interacción diaria.
 
 ###Ejercicio
 
-- *Instala R* https://cran.rediris.es/
-- *Instala RStudio* https://www.rstudio.com/products/rstudio/download/#download
+- *Descarga e Instala R* https://cran.rediris.es/
+- *Descarga e Instala RStudio* https://www.rstudio.com/products/rstudio/download/#download
 
 Ahora viene la *parte complicada* :smirk:
 
@@ -23,7 +45,7 @@ Estas *limitaciones* también tienen que ver dependiendo de la API que utilicemo
 - *La API de búsqueda* es para realizar búsquedas, tal como lo haría en Twitter.com.
 - *La API Streaming* es para desarrolladores de aplicaciones que desean recibir un flujo en tiempo real de los Tweets públicos en Twitter.
 
-###Definir una app en Twitter
+####Definir una app en Twitter
 
 **Primero hay que definir una app en Twitter** para poder tener acceso a la API. Esto es necesario porque sólo puedes pedir peticiones de información a la api un cierto número de veces cada cierto tiempo. 
 
@@ -40,7 +62,7 @@ Estas *limitaciones* también tienen que ver dependiendo de la API que utilicemo
 - Bajas a pie de página y haz clic en "create my access token"
 - Deja abierta esta página
 
-#Abrir RStudio y configurar el script
+####Abrir RStudio y configurar el script
 
 - Abre Rstudio
 - abre el archivo adjunto a RStudio `twitter-api.r` desde `file> open file`
@@ -55,12 +77,17 @@ setup_twitter_oauth("Consumer Key",
 
 > Una línea se ejecuta haciendo clic sobre ella y luego haciendo clic en "run", el botón superior.
 
+####Instalación de TwitteR
+
 - Instalar el paquete Twitter y habilitarlo ejecutando las líneas 4 y 5. Esto sólo la primera vez. Si no es la primera vez sólo la 5.
 
 ```R
 install.packages("twitteR") #usar sólo la primera vez, después comentar con #
 library(twitteR)
 ```
+
+####Identificación, petición de información y exportar resultados
+
 - Identificarse ejecutando las líneas 6,7,8 y 9
 - A la pregunta que sale en la parte inferior hay que responder con un "1" (sin las comillas), así ya se identificará automáticamente para próximas veces.
 - Para extraer info de un usuario específico, en la línea 14 donde pone "nom-usuari" hay que escribir el nombre de usuario del que se quiera la información.
@@ -85,4 +112,10 @@ write.csv(friends, file='usuario-seguidos.csv', row.names=F)
 
 ###Recursos
 
+- *Documentación sobre R* https://www.r-project.org/about.html
+- *Descarga de R* https://cran.rediris.es/
+- *RStudio* https://www.rstudio.com/
+- *Descarga de RStudio* https://www.rstudio.com/products/rstudio/download/#download
+- *Documentación REST API* https://dev.twitter.com/rest/public
 - *Límites de la API de Twitter* https://support.twitter.com/articles/160385
+- *Documentación del paquete TwitteR* https://cran.r-project.org/web/packages/twitteR/twitteR.pdf
