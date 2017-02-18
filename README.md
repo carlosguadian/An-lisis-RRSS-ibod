@@ -1,26 +1,26 @@
 #Análisis de Datos de Redes Sociales
 ##Contenido del módulo 
 
-*Recopilación, monotorizacion y analisis de los datos utilizables de las RRSS*
+> Recopilación, monotorizacion y analisis de los datos utilizables de las RRSS
 
-Este repositorio contiene materiales para las clases de Análisis de Datos de Redes Sociales del **IBOD (Iniciativa Barcelona Open Data)**.
+> Este repositorio contiene materiales para las clases de Análisis de Datos de Redes Sociales del **IBOD (Iniciativa Barcelona Open Data)**.
 
-*Duración*: 4h
+**Duración**: 4h
 
 ###Contenidos:
 
-~~~ 
 - Obtención de datos a través de API (Twitter, Facebook)
-    - R; datos de comunidad de TW (seguidores y seguidos) 
-	- Netvizz; datos de página de FB
+    - La **API** de Twitter
+    - **R** y **RStudio**; extraer y procesar datos de comunidad de TW (seguidores y seguidos) 
+	- **Netvizz**; extraer datos de una página de FB
 - Procesamiento de datos 1:
-	- Instalación y explicación de de *Google Refine*
-	- Consolidación y extracción de datos de un dataset de TW (menciones, hashtags, url)
+	- Consolidación de datos con **Open Refine**
+	- Consolidación y extracción de datos de un dataset de TW (menciones, hashtags, url) con **Open Refine**
 - Procesamiento de datos 2: 
-	- Uso de *Google Sheets* para e procesamiento de datos
+	- Uso de **Google Sheets** para e procesamiento de datos
 	- Cálculo de indicadores en una comunidad
 		- Ratio de comunidad
 		- Actividad diaria
 - Análisis de redes sociales:
-	- Gephi: Análisis de una conversación de TW
-~~~ 
+	- Qué es el **análisis de redes sociales** y conceptos básicos
+	- **Gephi**: Análisis de una conversación de Twitter
