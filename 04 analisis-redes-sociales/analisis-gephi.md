@@ -1,25 +1,48 @@
 #Análisis de Redes Sociales
 
-##¿Qué es Gephi?
-
-*Gephi* es una herramienta open source que permite analizar y visualizar archivos de grafo. Está desarrollada en java y es multiplataforma.
-
-Permite trabajar con diferentes tipos de archivos de grafo; `.graphml`, `.gexf`, `.gdf`, `.gephi`... E importar datos desde archivos csv tanto para la generación de nodos, como la de aristas.
-
 ##Conceptos básicos del Análisis de Redes
 
-- **Análisis de Redes** Es el área encargada de analizar las redes mediante la *teoría de redes* (conocida más genéricamente como *teoría de grafos*). Las redes pueden ser de diversos tipos: social, transporte, eléctrica, biológica, internet, información, epidemiología, etc. Las redes sociales son objeto de estudio particular en diversos campos que van desde la sociología hasta la gestión del conocimiento en las empresas. El estudio se centra en la asociación y medida de las relaciones y flujos entre las personas, grupos, organizaciones, computadoras, sitios web, así como cualquier otra entidad de procesamiento de información/conocimiento. Los nodos en la red en este caso son personas y grupos mientras que los enlaces muestran relaciones o flujos entre los nodos. El análisis de redes sociales proporciona herramientas tanto visuales como matemáticas para el estudio de de las relaciones humanas.
-- **Nodo** Representa cada uno de los elementos relacionados que vamos a analizar. Si analizamos una conversación de Twitter, los nodos son los *usuarios*. Si analizamos en esa misma conversación como se han utilizado los *hashtags*, los nodos serán estos. En una red viaria entre *poblaciones*, los nodos serán las poblaciones.
-- **Arista** Representa la relación entre dos nodos. Por ejemplo en la conversación de Twitter, esta puede ser representada por *RT* o *menciones* entre usuarios. El grosor de las aristas nos mostrará la intensidad con la que se ha producido, es decir, la arista entre dos usuarios que se hayan mencionado 4 veces, será menor que la que se ha que se genera entro otros dos usuarios que se hayan mencionado 8 veces.
-- **Comunidades** Saber cómo se han relacionado los nodos en el grafo analizado nos puede aportar una visión clara de lo que ha sucedido. En función de la intensidad de las relaciones y de la cercanía con otros nodos se puede determinar que sub-comunidades se han generado y mediante la visualización poder determinar si una conversación ha estado muy polarizada, o qué subtemas han movido cada una de estas subcomunidades.
-- **Tipo de grafo** 
-	- **Por el tipo de relación** Encontramos dos tipos de grafo en función de si las relaciones son direccionales o no. Por lo tanto hay *dirigidos* y *no dirigidos*.
-	- **Si hay uno o dos tipos de nodos** En el caso de analizar sólo las menciones entre usuarios, tenemos un sólo tipo de nodos. En el caso de analizar cómo han utilizado los hashtags los usuarios, nos encontramos ante un grafo *bipartito*.
-- **Medidas de centralidad** Éstas nos permitirán determinar la importancia de los nodos en función de su posición estructural en un grafo. Es decir, en función de las relaciones establecidas. Hay cuatro medidas de centralidad ampliamente utilizadas:
-	- *La centralidad de grado («degree centrality»)*: Tiene en cuenta el número de relaciones entre los nodos. Puede ser entrante, saliente o conjunta. Nos ayuda a determinar usuarios denominados *hub*, que concentran muchas relaciones. 
-	- *La cercanía («closeness»)* Tiene en cuenta la distancia de un nodo respecto del resto de los componentes del grafo. Es útil para poder determinar qué usuarios son los mejor posicionados para poder llegar al resto del conjunto.
-	- *La intermediación («betweenness»)* Determina qué usuarios son esenciales en la unión entre diferentes grupos del grafo. Son los que hacen de puente y que son vitales para poder hacer llegar una información entre comunidades.
-	- *La centralidad de vector propio («eigenvector centrality»)* Nos muestra que nodos son los más relevantes. Aquellos que son tomados por referencia por la mayoría de usuarios. No es sólo qué nodo recibe más relaciones entrantes, es qué nodo recibe más enlaces entrantes de nodos con más enlaces entrantes.
+###Análisis de Redes
+
+Es el área encargada de analizar las redes mediante la *teoría de redes* (conocida más genéricamente como *teoría de grafos*). Las redes pueden ser de diversos tipos: social, transporte, eléctrica, biológica, internet, información, epidemiología, etc. Las redes sociales son objeto de estudio particular en diversos campos que van desde la sociología hasta la gestión del conocimiento en las empresas. El estudio se centra en la asociación y medida de las relaciones y flujos entre las personas, grupos, organizaciones, computadoras, sitios web, así como cualquier otra entidad de procesamiento de información/conocimiento. Los nodos en la red en este caso son personas y grupos mientras que los enlaces muestran relaciones o flujos entre los nodos. El análisis de redes sociales proporciona herramientas tanto visuales como matemáticas para el estudio de de las relaciones humanas.
+
+###Nodo
+
+Representa cada uno de los elementos relacionados que vamos a analizar. Si analizamos una conversación de Twitter, los nodos son los *usuarios*. Si analizamos en esa misma conversación como se han utilizado los *hashtags*, los nodos serán estos. En una red viaria entre *poblaciones*, los nodos serán las poblaciones.
+
+###Arista
+
+Representa la relación entre dos nodos. Por ejemplo en la conversación de Twitter, esta puede ser representada por *RT* o *menciones* entre usuarios. El grosor de las aristas nos mostrará la intensidad con la que se ha producido, es decir, la arista entre dos usuarios que se hayan mencionado 4 veces, será menor que la que se ha que se genera entro otros dos usuarios que se hayan mencionado 8 veces.
+
+###Comunidades
+
+Saber cómo se han relacionado los nodos en el grafo analizado nos puede aportar una visión clara de lo que ha sucedido. En función de la intensidad de las relaciones y de la cercanía con otros nodos se puede determinar que sub-comunidades se han generado y mediante la visualización poder determinar si una conversación ha estado muy polarizada, o qué subtemas han movido cada una de estas subcomunidades.
+
+###Tipos de grafo
+
+- **Por el tipo de relación** Encontramos dos tipos de grafo en función de si las relaciones son direccionales o no. Por lo tanto hay *dirigidos* y *no dirigidos*.
+- **Si hay uno o dos tipos de nodos** En el caso de analizar sólo las menciones entre usuarios, tenemos un sólo tipo de nodos. En el caso de analizar cómo han utilizado los hashtags los usuarios, nos encontramos ante un grafo *bipartito*.
+
+###Medidas de centralidad
+
+Éstas nos permitirán determinar la importancia de los nodos en función de su posición estructural en un grafo. Es decir, en función de las relaciones establecidas. Hay cuatro medidas de centralidad ampliamente utilizadas:
+
+- *La centralidad de grado («degree centrality»)*: Tiene en cuenta el número de relaciones entre los nodos. Puede ser entrante, saliente o conjunta. Nos ayuda a determinar usuarios denominados *hub*, que concentran muchas relaciones. 
+- *La cercanía («closeness»)* Tiene en cuenta la distancia de un nodo respecto del resto de los componentes del grafo. Es útil para poder determinar qué usuarios son los mejor posicionados para poder llegar al resto del conjunto.
+- *La intermediación («betweenness»)* Determina qué usuarios son esenciales en la unión entre diferentes grupos del grafo. Son los que hacen de puente y que son vitales para poder hacer llegar una información entre comunidades.
+- *La centralidad de vector propio («eigenvector centrality»)* Nos muestra que nodos son los más relevantes. Aquellos que son tomados por referencia por la mayoría de usuarios. No es sólo qué nodo recibe más relaciones entrantes, es qué nodo recibe más enlaces entrantes de nodos con más enlaces entrantes.
+	
+##Gephi
+
+*Gephi* Es software open-source de análisis de redes y visualización escrito en Java en la plataforma NetBeans. Permite analizar y visualizar archivos de grafo.
+
+Permite trabajar con diferentes tipos de archivos de grafo; `.graphml`, `.gexf`, `.gdf`, `.gephi`... E importar datos desde archivos `.csv` tanto para la generación de nodos, como la de aristas.
+
+*Gephi* ha sido utilizado en proyectos de académicos de investigación, periodismo y en otro lugares, por ejemplo para visualizar la conectividad global del contenido del New York Times y para examinar el tráfico de red de Twitter durante tiempos de malestar social, junto con temas de análisis de redes más tradicionales. *Gephi* es ampliamente utilizado dentro del campo de las humanidades digitales, una comunidad donde muchos de sus desarrolladores están involucrados.
+
+*Gephi* puede también importar datos a redes sociales, también Facebook o Twitter, y generar grafos y clusters.
+
+> *Gephi* es la herramienta que utilizaremos para realizar el análisis de redes. Hay muchas otras, incluso accesibles vía web cómo *Netlytic*. Pero *Gephi* nos permite un alto nivel de customización del grafo resultante y una gran flexibilidad a la hora de trabajar con diferentes archivos de datos.
 
 ##Ejercicio
 
