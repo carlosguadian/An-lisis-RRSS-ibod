@@ -3,7 +3,7 @@
 - Descargar *Gephi* e instalarlo 
 - *url*: http://gephi.org
 - Abrir *Gephi*
-![Abrir archivo con Gephi](/abrir-gephi.png "Abrir archivo con Gephi")
+![Abrir archivo con Gephi](/tree/master/04%20analisis-redes-sociales/abrir-gephi.png "Abrir archivo con Gephi")
 - Abrir el csv generado en el módulo anterior con las menciones `Archivo > Abrir`
 - Aceptar el cuadro emergente que aparece con los datos de número de nodos, de aristas, si es dirigido, etc...
 - Aplicar el layout `Force Atlas 2` y cuando el grafo esté estirado parar el script.
