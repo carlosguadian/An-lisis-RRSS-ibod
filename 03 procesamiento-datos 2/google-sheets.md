@@ -18,6 +18,18 @@
 - Para la actividad diaria calcularemos la media de tweets por día para determinar:
 	- Si es un bot: Un usuario con una media de tweets diaria muy elevada (por encima de `25` tweets diarios de media hay que empezar a desconfiar) es muy probable que sea una cuenta automatizada.
 	- Si es un usuario que sólo utiliza twitter para informarse, para leer. No para participar. Estos usuarios tendrán una media muy baja. Podemos empezar a considerarlos como tales cuando la media es inferior a `1`
+	
+##Ejercicio
+
+- **Para realizar estos cálculos utilizaremos** el archivo de seguidores generado en el primer módulo con los seguidores de un perfil de Twitter.
+- Abrirlo en un archivo nuevo de **Google Sheets**
+- Generar una columna llamada `Ratio Comunidad` y generar la fórmula para dividir los usuarios seguidos entre los seguidores.
+- Para calcular la actividad media diaria de los usuarios:
+	- Mediante `datos > split texto en columnas...` utilizando como separador un espacio en blanco ` `, convertir la columna `create` en `fecha` y `hora`.
+	- Generar una columna nueva con la `fecha actual`. Para tener siempre el fichero actualizado a la fecha de uso utilizar la función `=TODAY()`
+	- Obtener en una nueva columna el `total de días` que hace que está activo. Se resta la columna `Fecha Actual`, de la `Fecha de Creación`.
+	- Cálculo de la actividad media diaria `Total de días / Statuses Count`
+	
 		
 ##Generación de archivos relacionales
 
