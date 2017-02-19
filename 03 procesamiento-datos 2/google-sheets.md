@@ -2,6 +2,14 @@
 
 > Las hojas de cálculo de Google son una herramienta muy potente. Las vamos a utilizar para calcular diferentes indicadores y generar archivos de grafo.
 
+
+- Antes de proceder al análisis de datos comprobar la localización de la página `archivo > configuración hoja de cálculo > locale`
+- Es **importante** que la hoja de cálculo tenga la localización de Estados Unidos. 
+- Hay diferencia en el carácter que define el decimal en los números. 
+- En EEUU es un `.`, mientras que en el sistema no anglosajón el decimal es una `,`.
+- La mayoría de aplicaciones / apis trabajan por defecto con el `.` para definir los decimales.
+
+
 ##Cálculo de indicadores en una comunidad
 
 - `Ratio de comunidad = seguidos / seguidores` Nos va a servir para poder tener un primer criterio para determinar la calidad de un usuario. 
@@ -17,7 +25,6 @@
 	- *Archivo de grafo de menciones* para poder determinar a los usuarios clave y determinar sub-comunidades.
 	- *Archivo de grafo de url* para ver qué usuarios las han compartido
 	- *Archivo de grafo de hashtags* para determinar como se han utilizado, y cuales han tenido más relevancia.
-- Es **importante** que la hoja de cálculo tenga la localización de Estados Unidos. Hay diferencia en el carácter que define el decimal en los números. En EEUU es un `.`, mientras que en el sistema no anglosajón el decimal es una `,`.
 
 ##Ejercicio
 

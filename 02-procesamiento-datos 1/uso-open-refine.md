@@ -31,7 +31,7 @@ Utilizaremos el fichero **tweets-opendata.csv**
 
 1. Abrir Open Refine
 2. Crear un nuevo proyecto importando el csv con los tweets
-3. Crear una nueva columna basada en “tweets” llamada “links”
+3. Crear una nueva columna basada en “text” llamada “links”
 4. Edit column
 5. Add column based on this column
 6. Introducir el nombre de la nueva columna
