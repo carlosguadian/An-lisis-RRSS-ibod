@@ -69,6 +69,7 @@ Permite trabajar con diferentes tipos de archivos de grafo; `.graphml`, `.gexf`,
 - **Análisis de Redes** https://es.wikipedia.org/wiki/An%C3%A1lisis_de_redes
 - **Medidas de Centralidad** https://es.wikipedia.org/wiki/Centralidad#Medidas_de_centralidad
 - **Detección de comunidades en redes sociales** Estudio realizado sobre las elecciones catalanas y elecciones generales de 2015 en Twitter https://repositorio.uam.es/bitstream/handle/10486/673431/Lorenzo_Mateo_Adrian_tfg.pdf?sequence=1
+- **Métodos de detección de comunidades** https://es.wikipedia.org/wiki/Estructura_de_comunidades
 - **Herramientas de análisis de Redes Sociales** http://www.k-government.com/2016/06/28/100-herramientas-analisis-redes-sna-ars/
 - **Networks, Crowds and Markets** Es uno de los manuales de referencia que además de hacer una gran introducción a la *teoría de grafos* y las *redes sociales*, también incluye una visión amplia relacional sobre mercados y multitudes, teniendo en cuenta elementos como la teoría de juegos **imprescindible** https://www.cs.cornell.edu/home/kleinber/networks-book/networks-book.pdf
 
