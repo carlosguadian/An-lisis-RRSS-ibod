@@ -6,7 +6,7 @@
 
 Es una aplicación que se encuentra en Facebook.
 
-*url*: https://apps.facebook.com/netvizz/
+*url*: https://apps.facebook.com/107036545989762/?ref=br_rs
 
 **Netvizz** es una herramienta que extrae datos de diferentes secciones de la plataforma de Facebook, en particular grupos y páginas, con fines de investigación. Las salidas de archivos se pueden analizar fácilmente en el software estándar.
 
