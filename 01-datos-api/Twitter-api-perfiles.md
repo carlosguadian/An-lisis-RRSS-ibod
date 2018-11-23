@@ -49,6 +49,8 @@ Estas *limitaciones* también tienen que ver dependiendo de la API que utilicemo
 
 **Primero hay que definir una app en Twitter** para poder tener acceso a la API. Esto es necesario porque sólo puedes pedir peticiones de información a la api un cierto número de veces cada cierto tiempo. 
 
+**Previamente para definir una nueva app en TWitter y desde julio de 2018** hay que aplicar para darse de alta como desarrollador en https://developer.twitter.com/en/apply/user Una vez aprobada la solicitud se podrán crear nuevas apps.
+
 - Tienes que ir a https://apps.twitter.com
 - Te identificas con tu twitter
 - Haces clic en el botón "create new app"
