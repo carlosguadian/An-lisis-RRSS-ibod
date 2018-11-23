@@ -3,23 +3,26 @@
 #primero poner en marcha el acceso a la api
 install.packages("twitteR") #usar sólo la primera vez, después comentar con #
 library(twitteR)
-setup_twitter_oauth("Consumer Key", 
-                    "Consumer secret", 
-                    "Access Token", 
-                    "Access Token secret")
+setup_twitter_oauth("4WtK0KdogKav5zDW2y5Edg", 
+                    "lHvkW4ZcVxLZV7oISX2Onh7QscZo5HvFj6SxWQ", 
+                    "3136731-XlYkEH0CaTQLLWe0Xb1Ufo5FoSDT66MUq8CzJkiTYM", 
+                    "g14eiVvpxXNFCATqeuIEOVPFmARQNoLQeS1gbTvo30")
 
 #seleccionar la opción 1 para loguarse automáticamente posteriores veces
 
-#obtener info de un perfil
-user <- getUser('nom-usuari')
+#obtener info de un perfil. Sustituir "nomusuari" por el que correspoonda
+user <- getUser('nomusuari')
+nomusuari <- lookupUsers('nomusuari')
+nomusuari <- twListToDF(nomusuari)
+write.csv(nomusuari, "datos-nomusuari.csv")
 
 #si se quiere info de varios perfiles
-users <- lookupUsers(c('usuario1','usuario2'))
+users <- lookupUsers(c('nomusuari1','nomusuari2'))
 infousers <- twListToDF(users)
 write.csv(infousers, "datos-usuarios.csv")
 
 #obtener tweets del usuario
-tweetsuser <- userTimeline(user, includeRts=FALSE, n=500)
+tweetsuser <- userTimeline(user, includeRts=FALSE, n=50)
 Usuaritweets <- twListToDF(tweetsuser)
 write.csv(Usuaritweets, file='tweets-usuario.csv', row.names=F)
 
