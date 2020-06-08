@@ -9,7 +9,7 @@
 
 > Se han incorporado tres nuevos archivos para trabajar con el paquete RTweet:
 
-- get-tweets-basic-analysis-RTweet.R Está el código para hacer una búsqueda, dibujar la serie, generar una tabla con los 20 hashtags más populares, obtener los tuits y los usuarios más populares y la procedencia de los usuarios.
-- get-timelines-RTweet.R obtiene el timeline de varios usuarios a la vez y dibuja las series para ver la comparativa.
-- get-profiles-info-RTweets.R Permite la obtención de información de perfiles, ya sea de una lista o de los seguidores de un usuario en concreto.
-- get-network.R Convierte la búsqueda en un archivo de grafo para su análisis en Gephi.
+- `get-tweets-basic-analysis-RTweet.R` Está el código para hacer una búsqueda, dibujar la serie, generar una tabla con los 20 hashtags más populares, obtener los tuits y los usuarios más populares y la procedencia de los usuarios.
+- `get-timelines-RTweet.R` obtiene el timeline de varios usuarios a la vez y dibuja las series para ver la comparativa.
+- `get-profiles-info-RTweets.R` Permite la obtención de información de perfiles, ya sea de una lista o de los seguidores de un usuario en concreto.
+- `get-network.R` Convierte la búsqueda en un archivo de grafo para su análisis en Gephi.
