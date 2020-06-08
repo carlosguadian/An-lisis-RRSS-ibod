@@ -12,7 +12,6 @@ library(ggthemes)
 
 #info
 # https://rtweet.info/
-# api google maps AIzaSyBMkgWTPYq753SKOhL9-9qp26NZaUHKQLw
 
 #búsqueda#
 tmls <- search_tweets(
