@@ -11,7 +11,7 @@ tmls <- search_tweets(
 )
 
 ## Crear un grafo utilizando retweet/mention/reply conexiones
-tmls_net <- network_data(tmls1, "retweet,mention,reply")
+tmls_net <- network_data(tmls, "retweet,mention,reply")
 ## Si igraph está instalado...
 ## Convertir en una red semántica
   tmls_net <- network_graph(tmls)
