@@ -12,7 +12,7 @@
 - Obtención de datos a través de API (Twitter, Facebook)
     - La **API** de Twitter
     - **R** y **RStudio**; extraer y procesar datos de comunidad de TW (seguidores y seguidos) 
-	- **Netvizz**; extraer datos de una página de FB
+	- **Netvizz**; extraer datos de una página de FB **Actualmente ya no funciona**
 - Procesamiento de datos 1:
 	- Consolidación de datos con **Open Refine**
 	- Consolidación y extracción de datos de un dataset de TW (menciones, hashtags, url) con **Open Refine**
