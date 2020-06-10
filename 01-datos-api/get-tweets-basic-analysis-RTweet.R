@@ -62,12 +62,6 @@ tmls %>%
 
 top20_plot
 
-#Usuarios más populares
-tmls %>% 
-  top_n(5, followers_count) %>% 
-  arrange(desc(followers_count)) %>% 
-  select(screen_name, followers_count, location, text)
-
 #El tweet más popular
 tuitpopular = tmls %>% 
   filter(!is_retweet) %>% 
