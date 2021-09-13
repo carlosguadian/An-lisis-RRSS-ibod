@@ -73,7 +73,7 @@ Permite trabajar con diferentes tipos de archivos de grafo; `.graphml`, `.gexf`,
 - **Herramientas de análisis de Redes Sociales** http://www.k-government.com/2016/06/28/100-herramientas-analisis-redes-sna-ars/
 - **Networks, Crowds and Markets** Es uno de los manuales de referencia que además de hacer una gran introducción a la *teoría de grafos* y las *redes sociales*, también incluye una visión amplia relacional sobre mercados y multitudes, teniendo en cuenta elementos como la teoría de juegos **imprescindible** https://www.cs.cornell.edu/home/kleinber/networks-book/networks-book.pdf
 
-###G ephi
+### Gephi
 
 - Guía de inicio rápida https://gephi.org/users/quick-start/
 - Tutorial de visualización https://gephi.org/users/tutorial-visualization/
